@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 .player {
-    background-color: black;
+    background: linear-gradient(45deg, black, rgb(77, 74, 74));;
     padding: 100px 50px;
     width: 400px;
     max-width: 100%;
