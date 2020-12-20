@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <Title>Interactive Audio Interface</Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interactive Audio Interface">
+    <meta name="author" content="Amanda Boujos">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="fa/css/font-awsome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+</head>
+<body>
+     
+    <div class="app-wrapper">
+        <div class="player">
+            <audio id="music-player"></audio>
+            <div id="song-image" class="song-img" style="background-image: url('https://images.unsplash.com/photo-1553318243-cfb9629edf40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="song-details">
+                <h2 id="song-title">Frosty the Snowman</h2>
+                <h3 id="song-artist">Anthony Vicounte & The Merry Gentlemen</h3>
+            </div>
+            <div class="player-controls">
+                <button id="prev-btn" class="skip-btn skip-back"><i class="fas fa-backward fa-lg"></i></button>
+                <button id="play-btn" class="play"><i id="play-icon" class="fas fa-play fa-2x"></i></button>
+                <button id="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
+            </div>
+            <div class="next-up">
+                <p>Next Song: <span id="song-next-up">We Wish you a Merry Christmas by Hansenchat</span></p>
+            </div>
+        </div>
+    </div>
+   
+    <script src="js/main.js"></script>
+</body>
+</html>

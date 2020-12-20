@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: radial-gradient(rgb(250, 5, 5),rgb(31, 78, 31));
+    margin: 0;
+    padding: 0;
+}
+.app-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.player {
+    background-color: black;
+    padding: 100px 50px;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 00px;
+    box-shadow: 20px 20px 20px rgb(31, 78, 31);
+}
+.song-img {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px red);
+    margin-bottom: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+
+.song-img:after {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.song-img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.song-details {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.song-details h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.song-details h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.player-controls .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    margin: 0 30px;
+    border: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 6px 12px red;
+    transition: 0.4s;
+}
+
+.player-controls .skip-btn {
+    background: none;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    color: red;
+}
+
+.player-controls .play:hover {
+    box-shadow: 0px 8px 16px rgba(10, 10, 10, 0.8);
+}
+
+.next-up p {
+    color:white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.next-up p span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media (max-width: 414px) {
+    .player {
+        min-height: 100vh;
+        border-radius: 0px;
+        padding: 75px 30px;
+    }
+}
